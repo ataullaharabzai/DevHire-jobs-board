@@ -1,8 +1,22 @@
+import { NavLink } from "react-router-dom";
 
-function Button() {
-  return (
-    <div>Button</div>
-  )
+interface Btn {
+  text: string;
+  visit: string;
+  className: string;
 }
 
-export default Button
+function Button({ text, visit, className }: Btn) {
+  return (
+    <>
+      <NavLink
+        className={`px-5 py-2 rounded-sm transition-all ${className}`}
+        to={visit}
+      >
+        {text}
+      </NavLink>
+    </>
+  );
+}
+
+export default Button;

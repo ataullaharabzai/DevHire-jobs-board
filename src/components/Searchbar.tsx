@@ -1,8 +1,17 @@
+import Button from "./Button";
 
-function Searchbar() {
-  return (
-    <div>Searchbar</div>
-  )
+interface Search {
+  placeholder: string;
 }
 
-export default Searchbar
+function Searchbar({ placeholder }: Search) {
+  return (
+    <div>
+      <i className="fa-brands fa-sistrix"></i>
+      <input type="text" placeholder={placeholder} />
+      <Button text="SEARCH JOBS" visit="/" />
+    </div>
+  );
+}
+
+export default Searchbar;
