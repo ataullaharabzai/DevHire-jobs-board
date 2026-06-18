@@ -16,7 +16,7 @@ export const jobs: Job[] = [
   },
   {
     id: 2,
-    title: "Frontend Developer",
+    title: "ReactJS Developer",
     company: "PixelCraft",
     location: "London, UK",
     salary: "$4,000/month",
@@ -27,9 +27,9 @@ export const jobs: Job[] = [
   },
   {
     id: 3,
-    title: "Frontend Developer",
+    title: "Angular Developer",
     company: "CodeWave",
-    location: "Berlin, Germany",
+    location: "Berlin",
     salary: "$5,000/month",
     type: "Full Time",
     experience: "Senior",
@@ -40,7 +40,7 @@ export const jobs: Job[] = [
   // Backend Developers
   {
     id: 4,
-    title: "Backend Developer",
+    title: "NodeJS Developer",
     company: "DataFlow",
     location: "Remote",
     salary: "$4,000/month",
@@ -52,7 +52,7 @@ export const jobs: Job[] = [
     id: 5,
     title: "PHP Developer",
     company: "CloudSync",
-    location: "Toronto, Canada",
+    location: "Canada",
     salary: "$5,000/month",
     type: "Full Time",
     experience: "Mid Level",
@@ -61,9 +61,9 @@ export const jobs: Job[] = [
   },
   {
     id: 6,
-    title: "Backend Developer",
+    title: ".NET Developer",
     company: "ByteWorks",
-    location: "New York, USA",
+    location: "USA",
     salary: "$6,500/month",
     type: "Full Time",
     experience: "Senior",
@@ -85,7 +85,7 @@ export const jobs: Job[] = [
     id: 8,
     title: "Full Stack Developer",
     company: "DevSphere",
-    location: "Dubai, UAE",
+    location: "Dubai",
     salary: "$6,000/month",
     type: "Full Time",
     experience: "Mid Level",
@@ -95,7 +95,7 @@ export const jobs: Job[] = [
     id: 9,
     title: "Full Stack Developer",
     company: "TechBridge",
-    location: "Amsterdam, Netherlands",
+    location: "Netherlands",
     salary: "$8,000/month",
     type: "Full Time",
     experience: "Senior",
@@ -105,7 +105,7 @@ export const jobs: Job[] = [
   // Web Designers
   {
     id: 10,
-    title: "Web Designer",
+    title: "UI Designer",
     company: "CreativePixel",
     location: "Remote",
     salary: "$2,500/month",
@@ -117,7 +117,7 @@ export const jobs: Job[] = [
     id: 11,
     title: "Web Designer",
     company: "DesignHub",
-    location: "Paris, France",
+    location: "Paris",
     salary: "$3,500/month",
     type: "Full Time",
     experience: "Mid Level",
@@ -125,7 +125,7 @@ export const jobs: Job[] = [
   },
   {
     id: 12,
-    title: "Web Designer",
+    title: "UI Developer",
     company: "Vision Studio",
     location: "Remote",
     salary: "$4,500/month",
@@ -137,7 +137,7 @@ export const jobs: Job[] = [
   // UI/UX Designers
   {
     id: 13,
-    title: "UI/UX Designer",
+    title: "Figma Designer",
     company: "UserFirst",
     location: "Remote",
     salary: "$3,500/month",
@@ -158,7 +158,7 @@ export const jobs: Job[] = [
   },
   {
     id: 15,
-    title: "UI/UX Designer",
+    title: "Motion Designer",
     company: "ExperienceLab",
     location: "Remote",
     salary: "$6,500/month",

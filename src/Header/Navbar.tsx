@@ -3,9 +3,11 @@ import Button from "../components/Button";
 
 function Navbar() {
   return (
-    <header className="text-[14px] md:text-[18px] w-full p-4 text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd]">
-      <h1 className="md:text-4xl text-2xl font-bold text-[#143]">DevHire</h1>
-      <nav className="w-85 hidden md:block">
+    <header className="text-[14px] md:text-[18px] w-full text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd] p-4">
+      <h1 className="md:text-4xl text-2xl font-bold text-[#143] ml-3 md:ml-0">
+        DevHire
+      </h1>
+      <nav className="w-85 hidden lg:block">
         <ul className="flex justify-between items-center">
           <NavLink
             to="/"
@@ -45,14 +47,51 @@ function Navbar() {
         <Button
           text="Browse Jobs"
           visit="/jobs"
-          className="shadow shadow-gray-400 hover:text-white hover:bg-[#143] text-[#143]"
+          className="shadow shadow-gray-400 hover:text-white hover:bg-[#143] text-[#143] text-[10px] md:text-[14px]"
         />
         <Button
           text="Profile"
           visit="/profile"
-          className="bg-[#143] text-white"
+          className="bg-[#143] text-white text-[10px] md:text-[14px]"
         />
       </div>
+
+      <section
+        className="bottomNav bg-white/5
+            backdrop-blur-sm
+            border border-white/10
+            shadow-[0_8px_32px_rgba(0,0,0,0.2)]
+            z-50 w-full fixed bottom-5 p-3 rounded-full flex justify-around items-center max-w-70 sm:max-w-100 lg:hidden"
+      >
+        <NavLink
+          to="/"
+          className={`flex justify-center items-center flex-col gap-1`}
+        >
+          <i className="fa-solid fa-house"></i>
+          <p className="text-[10px] md:text-[14px] font-semibold">Home</p>
+        </NavLink>
+        <NavLink
+          to="/jobs"
+          className={`flex justify-center items-center flex-col gap-1`}
+        >
+          <i className="fa-solid fa-briefcase"></i>
+          <p className="text-[10px] md:text-[14px] font-semibold">Jobs</p>
+        </NavLink>
+        <NavLink
+          to="/saved"
+          className={`flex justify-center items-center flex-col gap-1`}
+        >
+          <i className="fa-solid fa-bookmark"></i>
+          <p className="text-[10px] md:text-[14px] font-semibold">Saved</p>
+        </NavLink>
+        <NavLink
+          to="/about  "
+          className={`flex justify-center items-center flex-col gap-1`}
+        >
+          <i className="fa-solid fa-circle-info"></i>
+          <p className="text-[10px] md:text-[14px] font-semibold">About</p>
+        </NavLink>
+      </section>
     </header>
   );
 }

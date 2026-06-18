@@ -10,7 +10,7 @@ function Button({ text, visit, className }: Btn) {
   return (
     <>
       <NavLink
-        className={`px-5 py-2 rounded-sm transition-all ${className}`}
+        className={`md:px-5 md:py-2 px-3 py-2 rounded-sm transition-all ${className}`}
         to={visit}
       >
         {text}
