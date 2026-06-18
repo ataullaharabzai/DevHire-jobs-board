@@ -4,8 +4,8 @@ import Button from "../components/Button";
 function Navbar() {
   return (
     <header className="text-[14px] md:text-[18px] w-full p-4 text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd]">
-      <h1 className="md:text-4xl font-bold text-[#143]">DevHire</h1>
-      <nav className="w-85">
+      <h1 className="md:text-4xl text-2xl font-bold text-[#143]">DevHire</h1>
+      <nav className="w-85 hidden md:block">
         <ul className="flex justify-between items-center">
           <NavLink
             to="/"
@@ -41,7 +41,7 @@ function Navbar() {
           </NavLink>
         </ul>
       </nav>
-      <div className="w-85 flex justify-center items-center gap-4 p-3">
+      <div className="md:w-85 w-96 flex justify-center items-center gap-4 p-3">
         <Button
           text="Browse Jobs"
           visit="/jobs"

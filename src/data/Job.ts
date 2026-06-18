@@ -6,12 +6,13 @@ export const jobs: Job[] = [
     id: 1,
     title: "Frontend Developer",
     company: "TechNova",
-    location: "Remote",
+    location: 'Tehran',
     salary: "$3,000/month",
     type: "Full Time",
     experience: "Junior",
     description:
       "Build responsive web applications using React and TypeScript.",
+
   },
   {
     id: 2,
