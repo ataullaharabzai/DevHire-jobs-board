@@ -4,6 +4,7 @@ import Searchbar from "../components/Searchbar";
 import { jobs } from "../data/Job";
 import logo2 from "../images/logo2.avif";
 import { NavLink } from "react-router-dom";
+import Button from "../components/Button";
 
 function Home() {
   const [searchItem, setSearchItem] = useState("");
@@ -42,7 +43,7 @@ function Home() {
           Latest <span className="text-[#143cf4]">tech jobs</span>
         </h1>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filterJob.map((job) => (
+          {filterJob.slice(0, 4).map((job) => (
             <NavLink
               className={`m-0`}
               to={`/jobdetails/${job.id}`}
@@ -57,6 +58,9 @@ function Home() {
               />
             </NavLink>
           ))}
+        </div>
+        <div className="w-full mt-8 flex justify-center">
+          <Button text="Explore Jobs" visit="/jobs" className="text-white bg-[#143cf4] hover:bg-[#0428c4]" />
         </div>
       </section>
     </main>

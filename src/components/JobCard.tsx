@@ -8,9 +8,9 @@ interface CardType {
 
 function JobCard({ title, company, location, type, src }: CardType) {
   return (
-    <div className="w-full rounded-2xl p-6 md:p-8 bg-white shadow shadow-gray-300">
+    <div className="w-full rounded-2xl p-6 md:p-8 bg-white shadow shadow-gray-300 border border-transparent hover:border hover:border-[#143cf4] transition-all">
       <div className="flex items-center gap-5">
-        <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
+        <div className="w-20 h-20 md:w-24 md:h-24 shrink-0">
           <img
             src={src}
             alt="company Image"

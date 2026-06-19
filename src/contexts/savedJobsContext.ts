@@ -13,8 +13,8 @@ export const savedJobsContext = createContext<SavedJobsContextType>({
   removeJobs: () => {},
 });
 
-export const savedJobsProvider = savedJobsContext.Provider
+export const savedJobsProvider = savedJobsContext.Provider;
 
 export const useSavedJobs = () => {
-    return useContext(savedJobsContext)
-}
+  return useContext(savedJobsContext);
+};

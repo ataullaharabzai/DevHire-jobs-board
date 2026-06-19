@@ -2,9 +2,11 @@ import { useParams } from "react-router-dom";
 import { jobs } from "../data/Job";
 import logo from "../images/logo2.avif";
 import Button from "../components/Button";
+import { useSavedJobs } from "../contexts/savedJobsContext";
 
 function JobDetails() {
   const { id } = useParams();
+  const { addJobs } = useSavedJobs();
 
   const selectedJob = jobs.find((job) => job.id === Number(id));
 
@@ -20,7 +22,9 @@ function JobDetails() {
             />
           </div>
           <div>
-            <p className="text-[18px] md:text-2xl text-[#143cf4]">{selectedJob?.company}</p>
+            <p className="text-[18px] md:text-2xl text-[#143cf4]">
+              {selectedJob?.company}
+            </p>
             <p className="text-[24px] md:text-4xl font-bold">
               {selectedJob?.title}
             </p>
@@ -56,7 +60,9 @@ function JobDetails() {
         <hr className="mt-5 text-[#4e525a]" />
 
         <article className="p-10 mt-10">
-          <p className="text-2xl md:text-3xl font-semibold mb-5">Job description</p>
+          <p className="text-2xl md:text-3xl font-semibold mb-5">
+            Job description
+          </p>
           <div className="text-[#4e525a] flex flex-col items-start justify-center gap-8 p-3 mb-10 md:text-[17px]">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -71,10 +77,24 @@ function JobDetails() {
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente incidunt commodi repellat distinctio ipsum iste numquam molestias, aliquam quia beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quos.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+              incidunt commodi repellat distinctio ipsum iste numquam molestias,
+              aliquam quia beatae. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Iusto, quos.
+            </p>
           </div>
 
-          <Button text={`Save job`} visit="/saved" className="bg-[#143cf4] text-white" />
+          <Button
+            onClick={() => {
+              if (selectedJob) {
+                addJobs(selectedJob);
+              }
+            }}
+            text={`Save job`}
+            visit=""
+            className="bg-[#143cf4] text-white"
+          />
         </article>
       </div>
     </section>

@@ -3,10 +3,10 @@ import Button from "../components/Button";
 
 function Navbar() {
   return (
-    <header className="text-[14px] md:text-[18px] w-full text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd] p-6 md:p-8">
-      <h1 className="md:text-4xl text-2xl font-bold text-[#143cf4] ml-3 md:ml-0">
+    <header className="text-[14px] md:text-[18px] w-full text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd] p-4 md:p-6">
+      <NavLink to='/' className="md:text-4xl text-2xl font-bold text-[#143cf4] ml-3 md:ml-0">
         DevHire
-      </h1>
+      </NavLink>
       <nav className="w-85 hidden lg:block">
         <ul className="flex items-center gap-6">
           <NavLink
@@ -52,7 +52,7 @@ function Navbar() {
         <Button
           text="Profile"
           visit="/profile"
-          className="bg-[#143cf4] text-white text-[10px] md:text-[14px]"
+          className="bg-[#143cf4] hover:bg-[#0428c4] text-white text-[10px] md:text-[14px]"
         />
       </div>
 
