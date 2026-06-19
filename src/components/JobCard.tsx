@@ -8,22 +8,26 @@ interface CardType {
 
 function JobCard({ title, company, location, type, src }: CardType) {
   return (
-    <div className="w-full rounded-2xl lg:px-15 lg:py-10 px-5 py-2 bg-white shadow shadow-gray-400">
-      <div className="w-25 h-25 flex justify-between items-center gap-5 shadow rounded-2xl shadow-gray-400">
-        <img
-          src={src}
-          alt="company Image"
-          className="w-full h-full object-cover rounded-lg shadow shadow-gray-400"
-        />
-        <div className="flex justify-center items-start flex-col min-w-100 leading-10">
-          <p className="text-[#143] font-semibold md:text-[20px]">{company}</p>
-          <p className="md:text-[26px] font-bold">{title}</p>
-          <div className="flex text-[#4e524a] justify-center items-center gap-4 text-[12px] lg:text-[16px]">
-            <div className="flex justify-center items-center gap-2">
-              <i className="fa-regular fa-clock"></i>
+    <div className="w-full rounded-2xl p-6 md:p-8 bg-white shadow shadow-gray-300">
+      <div className="flex items-center gap-5">
+        <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
+          <img
+            src={src}
+            alt="company Image"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+        <div className="flex flex-col min-w-0 leading-relaxed">
+          <p className="text-[#143cf4] font-semibold md:text-[18px]">
+            {company}
+          </p>
+          <p className="md:text-[20px] font-bold truncate">{title}</p>
+          <div className="flex text-[#4e524a] items-center gap-4 text-[12px] lg:text-[14px] mt-1">
+            <div className="flex items-center gap-2">
+              <i className="fa-regular fa-clock text-[#143cf4]"></i>
               <p>{type}</p>
             </div>
-            <p>{location}</p>
+            <p className="truncate">{location}</p>
           </div>
         </div>
       </div>

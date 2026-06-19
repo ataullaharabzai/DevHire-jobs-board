@@ -20,7 +20,8 @@ function Home() {
         <div className="flex justify-center items-center flex-col gap-6 w-full">
           <div className="text-center text-3xl md:text-4xl lg:text-6xl font-semibold">
             <h1>
-              <span className="text-[#143]">DevHire</span> for Developers,
+              <span className="text-[#143cf4] font-bold">DevHire</span> for
+              Developers,
             </h1>
             <h1>Designers, and Marketers</h1>
           </div>
@@ -38,12 +39,12 @@ function Home() {
 
       <section className="jobCard bg-[#f7f6fb] md:p-6 p-5 lg:mt-20">
         <h1 className="lg:text-3xl p-3 sm:mb-5 lg-mb-10 font-bold">
-          Latest <span className="text-[#143]">tech jobs</span>
+          Latest <span className="text-[#143cf4]">tech jobs</span>
         </h1>
-        <div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
           {filterJob.map((job) => (
             <NavLink
-              className={`w-full m-3 lg:max-w-160 flex justify-center items-stretch flex-col gap-5`}
+              className={`m-0`}
               to={`/jobdetails/${job.id}`}
               key={job.id}
             >

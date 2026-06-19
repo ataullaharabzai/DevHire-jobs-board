@@ -3,16 +3,16 @@ import Button from "../components/Button";
 
 function Navbar() {
   return (
-    <header className="text-[14px] md:text-[18px] w-full text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd] p-4">
-      <h1 className="md:text-4xl text-2xl font-bold text-[#143] ml-3 md:ml-0">
+    <header className="text-[14px] md:text-[18px] w-full text-[#4e525a] flex justify-around items-center shadow-2xl shadow-[#e6ebfd] p-6 md:p-8">
+      <h1 className="md:text-4xl text-2xl font-bold text-[#143cf4] ml-3 md:ml-0">
         DevHire
       </h1>
       <nav className="w-85 hidden lg:block">
-        <ul className="flex justify-between items-center">
+        <ul className="flex items-center gap-6">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-[#143] font-semibold" : "font-semibold"
+              isActive ? "text-[#143cf4] font-semibold" : "font-semibold"
             }
           >
             Home
@@ -20,7 +20,7 @@ function Navbar() {
           <NavLink
             to="/jobs"
             className={({ isActive }) =>
-              isActive ? "text-[#143] font-semibold" : "font-semibold"
+              isActive ? "text-[#143cf4] font-semibold" : "font-semibold"
             }
           >
             Jobs
@@ -28,7 +28,7 @@ function Navbar() {
           <NavLink
             to="/saved"
             className={({ isActive }) =>
-              isActive ? "text-[#143] font-semibold" : "font-semibold"
+              isActive ? "text-[#143cf4] font-semibold" : "font-semibold"
             }
           >
             Saved Jobs
@@ -36,23 +36,23 @@ function Navbar() {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              isActive ? "text-[#143] font-semibold" : "font-semibold"
+              isActive ? "text-[#143cf4] font-semibold" : "font-semibold"
             }
           >
             About
           </NavLink>
         </ul>
       </nav>
-      <div className="md:w-85 w-96 flex justify-center items-center gap-4 p-3">
+      <div className="md:w-85 w-96 flex justify-center items-center gap-4 p-4">
         <Button
           text="Browse Jobs"
           visit="/jobs"
-          className="shadow shadow-gray-400 hover:text-white hover:bg-[#143] text-[#143] text-[10px] md:text-[14px]"
+          className="shadow shadow-gray-400 hover:text-white hover:bg-[#143cf4] text-[#143cf4] text-[10px] md:text-[15px]"
         />
         <Button
           text="Profile"
           visit="/profile"
-          className="bg-[#143] text-white text-[10px] md:text-[14px]"
+          className="bg-[#143cf4] text-white text-[10px] md:text-[14px]"
         />
       </div>
 

@@ -20,7 +20,7 @@ function JobDetails() {
             />
           </div>
           <div>
-            <p className="text-[18px] md:text-2xl">{selectedJob?.company}</p>
+            <p className="text-[18px] md:text-2xl text-[#143cf4]">{selectedJob?.company}</p>
             <p className="text-[24px] md:text-4xl font-bold">
               {selectedJob?.title}
             </p>
@@ -32,17 +32,17 @@ function JobDetails() {
             <Button
               text="APPLY NOW"
               visit="/"
-              className="text-white bg-[#143]"
+              className="text-white bg-[#143cf4]"
             />
           </div>
         </div>
         <div className="w-full flex flex-col md:flex-row justify-start px-15 items-center gap-15 md:text-[18px] mt-10 text-[#4e525a]">
           <div className="flex gap-2 items-center">
-            <i className="fa-regular fa-clock"></i>
+            <i className="fa-regular fa-clock text-[#143cf4]"></i>
             <p>{selectedJob?.type}</p>
           </div>
           <div className="flex gap-2 items-center">
-            <i className="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot text-[#143cf4]"></i>
             <p>{selectedJob?.location}</p>
           </div>
           <div>
@@ -74,7 +74,7 @@ function JobDetails() {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente incidunt commodi repellat distinctio ipsum iste numquam molestias, aliquam quia beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quos.</p>
           </div>
 
-          <Button text={`Save job`} visit="/saved" className="bg-[#143] text-white" />
+          <Button text={`Save job`} visit="/saved" className="bg-[#143cf4] text-white" />
         </article>
       </div>
     </section>
