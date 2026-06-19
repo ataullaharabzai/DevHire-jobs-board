@@ -40,12 +40,13 @@ function Home() {
         <h1 className="lg:text-3xl p-3 sm:mb-5 lg-mb-10 font-bold">
           Latest <span className="text-[#143]">tech jobs</span>
         </h1>
-        <NavLink
-          to="/jobdetails"
-          className="w-full lg:max-w-160 flex justify-center items-stretch flex-col gap-5"
-        >
+        <div>
           {filterJob.map((job) => (
-            <div key={job.id}>
+            <NavLink
+              className={`w-full m-3 lg:max-w-160 flex justify-center items-stretch flex-col gap-5`}
+              to={`/jobdetails/${job.id}`}
+              key={job.id}
+            >
               <JobCard
                 title={job.title}
                 company={job.company}
@@ -53,9 +54,9 @@ function Home() {
                 src={logo2}
                 location={job.location}
               />
-            </div>
+            </NavLink>
           ))}
-        </NavLink>
+        </div>
       </section>
     </main>
   );

@@ -6,13 +6,15 @@ export const jobs: Job[] = [
     id: 1,
     title: "Frontend Developer",
     company: "TechNova",
-    location: 'Tehran',
+    location: "Tehran",
     salary: "$3,000/month",
     type: "Full Time",
     experience: "Junior",
     description:
       "Build responsive web applications using React and TypeScript.",
-
+    postedDate: "3 days ago",
+    applicants: 34,
+    companySize: "5-20 employees",
   },
   {
     id: 2,
@@ -24,6 +26,9 @@ export const jobs: Job[] = [
     experience: "Mid Level",
     description:
       "Develop modern user interfaces and optimize website performance.",
+    postedDate: "2 hours ago",
+    applicants: 34,
+    companySize: "5-75 employees",
   },
   {
     id: 3,
@@ -35,6 +40,9 @@ export const jobs: Job[] = [
     experience: "Senior",
     description:
       "Lead frontend development using React, TypeScript, and Tailwind CSS.",
+    postedDate: "4 hours ago",
+    applicants: 34,
+    companySize: "5-20 employees",
   },
 
   // Backend Developers
@@ -47,6 +55,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Junior",
     description: "Build REST APIs and manage databases using Node.js.",
+    postedDate: "1 day ago",
+    applicants: 34,
+    companySize: "5-20 employees",
   },
   {
     id: 5,
@@ -58,6 +69,9 @@ export const jobs: Job[] = [
     experience: "Mid Level",
     description:
       "Design scalable backend services and integrate third-party APIs.",
+    postedDate: "2 days ago",
+    applicants: 34,
+    companySize: "5-70 employees",
   },
   {
     id: 6,
@@ -68,6 +82,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Senior",
     description: "Architect backend systems and optimize database performance.",
+    postedDate: "4 days ago",
+    applicants: 34,
+    companySize: "50-200 employees",
   },
 
   // Full Stack Developers
@@ -80,6 +97,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Junior",
     description: "Work on both frontend and backend using React and Node.js.",
+    postedDate: "6 hours ago",
+    applicants: 34,
+    companySize: "10-90 employees",
   },
   {
     id: 8,
@@ -90,6 +110,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Mid Level",
     description: "Develop complete web solutions from UI to database.",
+    postedDate: "2 days ago",
+    applicants: 34,
+    companySize: "15-60 employees",
   },
   {
     id: 9,
@@ -100,6 +123,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Senior",
     description: "Lead development of enterprise-level web applications.",
+    postedDate: "1 day ago",
+    applicants: 34,
+    companySize: "10-50 employees",
   },
 
   // Web Designers
@@ -112,6 +138,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Junior",
     description: "Design attractive and responsive website layouts.",
+    postedDate: "45 minutes ago",
+    applicants: 34,
+    companySize: "10-40 employees",
   },
   {
     id: 11,
@@ -122,6 +151,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Mid Level",
     description: "Create visually appealing web experiences for clients.",
+    postedDate: "9 days ago",
+    applicants: 34,
+    companySize: "5-20 employees",
   },
   {
     id: 12,
@@ -132,6 +164,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Senior",
     description: "Lead design projects and establish design systems.",
+    postedDate: "3 hours ago",
+    applicants: 34,
+    companySize: "5-15 employees",
   },
 
   // UI/UX Designers
@@ -145,6 +180,9 @@ export const jobs: Job[] = [
     experience: "Junior",
     description:
       "Design user-friendly interfaces and conduct usability testing.",
+    postedDate: "3 days ago",
+    applicants: 34,
+    companySize: "5-25 employees",
   },
   {
     id: 14,
@@ -155,6 +193,9 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Mid Level",
     description: "Create wireframes, prototypes, and user journeys.",
+    postedDate: "7 days ago",
+    applicants: 34,
+    companySize: "15-70 employees",
   },
   {
     id: 15,
@@ -165,5 +206,8 @@ export const jobs: Job[] = [
     type: "Full Time",
     experience: "Senior",
     description: "Lead UX research and product design strategy.",
+    postedDate: "5 days ago",
+    applicants: 34,
+    companySize: "5-20 employees",
   },
 ];
