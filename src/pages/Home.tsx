@@ -51,7 +51,7 @@ function Home() {
             >
               <JobCard
                 title={job.title}
-                company={job.company} 
+                company={job.company}
                 type={job.type}
                 src={logo2}
                 location={job.location}
@@ -60,7 +60,12 @@ function Home() {
           ))}
         </div>
         <div className="w-full mt-8 flex justify-center">
-          <Button text="Explore Jobs" visit="/jobs" className="text-white bg-[#143cf4] hover:bg-[#0428c4]" />
+          <Button
+            icon={<i className="fa-solid fa-arrow-right"></i>}
+            text="Explore Jobs"
+            visit="/jobs"
+            className="text-white bg-[#143cf4] hover:bg-[#0428c4]"
+          />
         </div>
       </section>
     </main>

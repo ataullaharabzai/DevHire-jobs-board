@@ -10,7 +10,7 @@ function About() {
         <img src={aboutLogo} alt="About Hero" className="m-auto" />
       </div>
       <div className="bg-[#f7f6fb] mt-10 p-8 flex flex-col gap-15">
-        <div className="w-full md:w-2/3 p-7 flex gap-5 items-center shadow shadow-gray-400 bg-white rounded-xl">
+        <div className="w-full md:w-2/3 p-7 flex gap-5 items-center shadow shadow-gray-400 bg-white rounded-xl border border-transparent hover:border hover:border-[#143cf4] transition-all">
           <div className="w-80 h-50">
             <img
               src={card1}
@@ -32,7 +32,7 @@ function About() {
         </div>
 
         <div className="w-full flex justify-end">
-          <div className="w-full md:w-2/3 p-7 flex gap-5 items-center shadow shadow-gray-400 bg-white rounded-xl">
+          <div className="w-full md:w-2/3 p-7 flex gap-5 items-center shadow shadow-gray-400 bg-white rounded-xl border border-transparent hover:border hover:border-[#143cf4] transition-all">
             <div className="w-1/2">
               <p className="text-[20px] md:text-[26px] font-bold text-[#143cf4]">
                 Connect With Top Employers
@@ -54,7 +54,7 @@ function About() {
           </div>
         </div>
 
-        <div className="w-full md:w-2/3 p-7 flex gap-5 items-center shadow shadow-gray-400 bg-white rounded-xl">
+        <div className="w-full md:w-2/3 p-7 flex gap-5 items-center shadow shadow-gray-400 bg-white rounded-xl border border-transparent hover:border hover:border-[#143cf4] transition-all">
           <div className="w-80 h-50">
             <img
               src={card3}
