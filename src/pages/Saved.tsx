@@ -2,17 +2,27 @@ import { useSavedJobs } from "../contexts/savedJobsContext";
 import type { Job } from "../types/Job";
 import logo from "../images/logo2.avif";
 import Button from "../components/Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Saved() {
   const { savedJobs } = useSavedJobs();
   const { removeJobs } = useSavedJobs();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
 
   if (savedJobs.length > 0) {
     return (
       <div>
         {savedJobs.map((job: Job) => (
           <section>
-            <div className="w-full lg:w-3/4 m-auto md:mt-20 p-5 shadow rounded-3xl shadow-gray-400">
+            <div data-aos="zoom-in" className="mb-5 w-full lg:w-3/4 m-auto md:mt-20 p-5 shadow rounded-3xl shadow-gray-400">
               <div className="flex justify-evenly gap-10 items-center">
                 <div className="md:w-30 md:h-30 w-15 h-15">
                   <img
@@ -36,7 +46,7 @@ function Saved() {
                   <Button
                     text="APPLY NOW"
                     visit="/"
-                    className="text-white bg-[#143cf4]"
+                    className="text-white bg-[#143cf4] hover:bg-[#0629c6]"
                   />
                 </div>
               </div>
@@ -69,7 +79,7 @@ function Saved() {
                     }}
                     text={`Remove Job`}
                     visit=""
-                    className="bg-[#143cf4] text-white"
+                    className="bg-[#143cf4] hover:bg-[#0629c6] text-white"
                   />
                 </div>
               </article>

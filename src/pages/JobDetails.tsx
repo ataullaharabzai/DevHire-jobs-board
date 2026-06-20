@@ -15,7 +15,7 @@ function JobDetails() {
       <div className="w-full lg:w-3/4 m-auto md:mt-20 p-5 shadow rounded-3xl shadow-gray-400">
         <div className="flex justify-evenly gap-10 items-center">
           <div className="md:w-30 md:h-30 w-15 h-15">
-            <img
+            <img 
               src={logo}
               alt="Company Logo"
               className="w-full h-full rounded-3xl shadow shadow-gray-400"
@@ -36,7 +36,7 @@ function JobDetails() {
             <Button
               text="APPLY NOW"
               visit="/"
-              className="text-white bg-[#143cf4]"
+              className="text-white bg-[#143cf4] hover:bg-[#0629c6]"
             />
           </div>
         </div>
@@ -93,7 +93,7 @@ function JobDetails() {
             }}
             text={`Save job`}
             visit=""
-            className="bg-[#143cf4] text-white"
+            className="bg-[#143cf4] text-white hover:bg-[#0629c6]"
           />
         </article>
       </div>

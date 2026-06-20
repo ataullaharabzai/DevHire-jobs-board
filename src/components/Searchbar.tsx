@@ -8,8 +8,8 @@ interface Search {
 
 function Searchbar({ placeholder, searchItems, setSearchItems }: Search) {
   return (
-    <div className="w-full max-w-130 h-15 rounded-lg shadow shadow-gray-500 p-4 md:p-4 flex justify-start items-center border-2 border-transparent hover:border-2 hover:border-[#143cf4] transition-all">
-      <i className="fa-brands fa-sistrix md:text-2xl mr-3"></i>
+    <div className="w-full max-w-130 h-15 rounded-lg shadow shadow-gray-500 p-4 md:p-4 flex justify-start items-center border border-transparent hover:border hover:border-[#143cf4] transition-all">
+      <i className="fa-brands fa-sistrix md:text-2xl mr-3 text-[#143cf4]"></i>
       <input
         type="text"
         placeholder={placeholder}

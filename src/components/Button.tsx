@@ -13,11 +13,11 @@ function Button({ text, visit, className, onClick, icon }: Btn) {
   return (
     <>
       <NavLink
-        className={`md:px-6 md:py-3 px-4 py-2 rounded-md transition-all ${className} flex items-center gap-3`}
+        className={`md:px-6 md:py-3 px-4 py-2 rounded-md transition-all ${className} `}
         to={visit}
         onClick={onClick}
       >
-        <span>{text}</span>
+        <span className="">{text}</span> 
         {icon}
       </NavLink>
     </>
