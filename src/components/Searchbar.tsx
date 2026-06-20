@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 interface Search {
   placeholder: string;
   searchItems: string;
