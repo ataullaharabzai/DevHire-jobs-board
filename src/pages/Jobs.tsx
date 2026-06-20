@@ -25,15 +25,17 @@ function Jobs() {
         />
       </div>
       <div className="bg-[#f7f6fb] p-5">
-        <div className="flex">
-          <h1 className="lg:text-3xl p-3 sm:mb-5 lg-mb-10 font-bold md:mr-25">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-6">
+          <h1 className="text-2xl md:text-3xl p-3 font-bold max-w-full md:max-w-2xl">
             Latest <span className="text-[#143cf4]">tech jobs</span>
           </h1>
-          <Searchbar
-            placeholder="Search Jobs"
-            searchItems={searchItem}
-            setSearchItems={setSearchItem}
-          />
+          <div className="w-full md:w-1/2">
+            <Searchbar
+              placeholder="Search Jobs"
+              searchItems={searchItem}
+              setSearchItems={setSearchItem}
+            />
+          </div>
         </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredJobs.map((job) => (

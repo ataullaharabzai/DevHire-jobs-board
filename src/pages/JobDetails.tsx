@@ -13,15 +13,15 @@ function JobDetails() {
   return (
     <section>
       <div className="w-full lg:w-3/4 m-auto md:mt-20 p-5 shadow rounded-3xl shadow-gray-400">
-        <div className="flex justify-evenly gap-10 items-center">
-          <div className="md:w-30 md:h-30 w-15 h-15">
-            <img 
+        <div className="flex flex-col md:flex-row md:justify-between gap-6 md:gap-10 items-center">
+          <div className="w-24 h-24 md:w-32 md:h-32">
+            <img
               src={logo}
               alt="Company Logo"
-              className="w-full h-full rounded-3xl shadow shadow-gray-400"
+              className="w-full h-full rounded-3xl shadow shadow-gray-400 object-cover"
             />
           </div>
-          <div>
+          <div className="text-center md:text-left flex-1">
             <p className="text-[18px] md:text-2xl text-[#143cf4]">
               {selectedJob?.company}
             </p>
@@ -40,7 +40,7 @@ function JobDetails() {
             />
           </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row justify-start px-15 items-center gap-15 md:text-[18px] mt-10 text-[#4e525a]">
+        <div className="w-full flex flex-col md:flex-row justify-start md:justify-between px-4 items-center gap-4 md:gap-6 md:text-[18px] mt-6 text-[#4e525a] flex-wrap">
           <div className="flex gap-2 items-center">
             <i className="fa-regular fa-clock text-[#143cf4]"></i>
             <p>{selectedJob?.type}</p>

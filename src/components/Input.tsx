@@ -1,9 +1,11 @@
+import type React from "react";
+
 interface InputType {
   placeholder: string;
   label: string;
   className: string;
   value: string;
-  setValue?: () => void;
+  setValue?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   type: string;
 }
 
@@ -22,7 +24,7 @@ function Input({
         type={type}
         placeholder={placeholder}
         value={value}
-        onChange={() => setValue}
+        onChange={setValue}
         className="w-full rounded-sm border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm transition duration-200 focus:border-[#143cf4] focus:outline-none focus:ring-2 focus:ring-[#143cf4]/10"
       />
     </div>
