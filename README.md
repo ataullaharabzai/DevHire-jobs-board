@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# DevHire - Modern Job Board Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevHire is a modern and responsive job board application built to help developers, designers, and other tech professionals discover new career opportunities. The project was created as a portfolio and learning project to strengthen my frontend development skills while building a real-world application with modern technologies.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Website:** https://devhir.vercel.app
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Source Code:** https://github.com/ataullaharabzai/DevHire-jobs-board
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Browse available tech jobs
+* Search jobs by title
+* View detailed job information
+* Save jobs for later
+* Remove saved jobs
+* User profile management
+* Responsive design for mobile, tablet, and desktop
+* Smooth scroll animations using AOS
+* Modern and clean user interface
+* Client-side routing with React Router
+* Persistent data storage using Local Storage
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Built With
+
+* React
+* TypeScript
+* Tailwind CSS
+* React Router
+* AOS (Animate On Scroll)
+* Font Awesome
+
+---
+
+## Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── contexts/
+├── data/
+├── types/
+├── images/
+└── App.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## What I Learned
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+While building DevHire, I gained hands-on experience with:
+
+* Component-based architecture in React
+* TypeScript interfaces and type safety
+* React Context API
+* Local Storage management
+* Dynamic routing with React Router
+* Reusable UI components
+* Responsive design with Tailwind CSS
+* State management and data flow in React
+
+---
+
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/ataullaharabzai/DevHire-jobs-board.git
 ```
+
+### Navigate to the project
+
+```bash
+cd DevHire-jobs-board
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## Contact
+
+If you'd like to connect or provide feedback, feel free to reach out.
+
+Email: [ataullaharabzai7@gmail.com](mailto:ataullaharabzai7@gmail.com)
+
+LinkedIn: linkedin.com/in/ataullah-dev
+
+GitHub: github.com/ataullaharabzai
+
+Portfolio: portfolio-ataullah.vercel.app
+
+---
+
+Made with ❤️ by Ataullah Arabzai
+
+Frontend Development Student
