@@ -29,7 +29,7 @@ function Jobs() {
           <h1 className="text-2xl md:text-3xl p-3 font-bold max-w-full md:max-w-2xl">
             Latest <span className="text-[#143cf4]">tech jobs</span>
           </h1>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 mb-5">
             <Searchbar
               placeholder="Search Jobs"
               searchItems={searchItem}
