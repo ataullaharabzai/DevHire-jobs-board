@@ -4,7 +4,7 @@ DevHire is a modern and responsive job board application built to help developer
 
 ## Live Demo
 
-**Website:** https://devhir.vercel.app
+**Website:** https://dev-hire-jobs.vercel.app/
 
 ## GitHub Repository
 
