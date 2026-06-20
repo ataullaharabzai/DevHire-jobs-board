@@ -51,7 +51,7 @@ function Home() {
             >
               <JobCard
                 title={job.title}
-                company={job.company}
+                company={job.company} 
                 type={job.type}
                 src={logo2}
                 location={job.location}
