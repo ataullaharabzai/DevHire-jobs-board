@@ -85,7 +85,7 @@ function Navbar() {
           <p className="text-[10px] md:text-[14px] font-semibold">Saved</p>
         </NavLink>
         <NavLink
-          to="/about  "
+          to="/about"
           className={`flex justify-center items-center flex-col gap-1`}
         >
           <i className="fa-solid fa-circle-info"></i>
