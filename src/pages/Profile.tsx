@@ -19,10 +19,23 @@ function Profile() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    localStorage.setItem("profile", JSON.stringify(profile));
+    
+    if (
+      !profile.firstName.trim() ||
+      !profile.lastName.trim() ||
+      !profile.bio.trim() ||
+      !profile.location.trim() ||
+      !profile.profession.trim() ||
+      !profile.email.trim()
+    ) {
+      alert('Please fill in all fields');
+      return;
+    }
+
     setSavedProfile(profile);
     setProfile(emptyProfile);
     setIsEditable(false);
+    localStorage.setItem("profile", JSON.stringify(profile));
   };
 
   useEffect(() => {
